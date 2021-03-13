@@ -17,7 +17,7 @@
       margin-right: auto;
     }
   </style>
-  <link rel="stylesheet" href="mystyle.css">
+  <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -56,8 +56,27 @@
     <h3>Doctoral Candidates</h3>
       <ol>
         <li>
-        <div>
-          <img src="rutten.png" height="240" class="center">
+          <img id="myImg1" src="rutten.png" alt="Rutten" height="240" class="center">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <script>
+            var modal = document.getElementById("myModal");
+            var img1 = document.getElementById("myImg1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img1.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "In May 2020 I received my master diploma in Technical Medicine after finishing my graduation project called Computational fluid dynamics in the stented arteria femoralis superficialis. In July 2020 I joined M3i as a researcher to work on publications based on this project and from October I continued this research as a PhD student." ;
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+          </script>
           <p style="text-align:center;"> 
             <b> Lisa Rutten </b> <br> 
             (2020--ongoing with Michel Reijnen) <br>
@@ -67,18 +86,39 @@
           </p>
         </div>
         </li>
+
         <li>
-        <div>
-          <img src="vlogman.png" height="240" class="center">
+          <img id="myImg2" src="vlogman.png" alt="Vlogman" height="240" class="center">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <script>
+            var modal = document.getElementById("myModal");
+            var img2 = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img2.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "Tristan obtained his masters degree in mechanical engineering in Twente in Feb 2021. His master thesis focused on multigrid methods for lubrication. From April 2021 he started to work as a doctoral candidate in the ULTIMO project funded by the NWO. Trained as a mechanical engineer in Twente his doctoral work will focus on the development of a particle transport method within the LBM framework Musubi. He will study the behavior of particle transport in the liver vasculature to improve SIRT therapy for liver tumors"; 
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+          </script>
           <p style="text-align:center;"> 
-            <b> Tristan Vlogman </b> <br> 
-            (2021--ongoing ) <br>
+            <b> Tristan Vlogman</b> <br> 
+            (2021--ongoing) <br>
             <i> A computational model to study and improve the efficacy of
             particles transport in radioembolization therapy for liver tumours
             </i> 
           </p>
         </div>
         </li>
+
       </ol>
 
     <br> <br> <br> <br> 
@@ -203,6 +243,7 @@
         </div>
         </li>
       </ol>
+
 
   </body>
 
