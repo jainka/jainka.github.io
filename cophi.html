@@ -54,9 +54,10 @@
     <h2>Group Members</h2>
     <h3>Doctoral Candidates</h3>
       <ol>
+
         <li>
         <div>
-          <img id="myImg1" src="rutten.png" alt="Rutten" height="240" class="center">
+          <img id="myImg3" src="Mengyu.jpeg" alt="Mengyu" height="240" class="center">
           <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
@@ -64,13 +65,13 @@
           </div>
           <script>
             var modal = document.getElementById("myModal");
-            var img1 = document.getElementById("myImg1");
+            var img2 = document.getElementById("myImg3");
             var modalImg = document.getElementById("img01");
             var captionText = document.getElementById("caption");
-            img1.onclick = function(){
+            img2.onclick = function(){
               modal.style.display = "block";
               modalImg.src = this.src;
-              captionText.innerHTML = "Lisa obtained her master degree in Technical Medicine with a thesis on <i>Computational fluid dynamics in the stented arteria femoralis superficialis</i>. Since October 2020 she is working towards her doctoral thesis that involves <i> in vivo </i> clinical studies at the Rijnstate hospital under the supervision of Prof. Michel Reijnen and simulations of flow in stented arteries using the lattice Boltzmann method.";
+              captionText.innerHTML = "Mengyu Wang completed his master's degree in aeronautical engineering from Beihang University, China in January 2019. Before joining UT, he worked in the medical tech industry for over three years. As part of his recent project, he utilized the lattice Boltzmann method to calculate the flow inside coronary arteries. Starting from September 2023, his doctoral research will focus on the intricate interplay between geometrical complexity and mesoscopic computation in abdominal aortic aneurysm type II endoleaks.";
             }
             var span = document.getElementsByClassName("close")[0];
             span.onclick = function() {
@@ -78,11 +79,11 @@
             }
           </script>
           <p style="text-align:center;"> 
-            <b> Lisa Rutten </b> <br> 
-            (2020--ongoing with Michel Reijnen) <br>
-            <i> Optical Coherence Tomography and High-Fidelity Flow
-            Simulations for improved Stent Planning in Femoropopliteal
-            Disease</i> 
+            <b> Mengyu Wang</b> <br> 
+            (2023--ongoing) <br>
+            <i> Computational modeling of flow reversal to understand the
+            etiology of type II endoleaks
+            </i> 
           </p>
         </div>
         </li>
@@ -119,6 +120,40 @@
           </p>
         </div>
         </li>
+
+        <li>
+        <div>
+          <img id="myImg1" src="rutten.png" alt="Rutten" height="240" class="center">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <script>
+            var modal = document.getElementById("myModal");
+            var img1 = document.getElementById("myImg1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img1.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = "Lisa obtained her master degree in Technical Medicine with a thesis on <i>Computational fluid dynamics in the stented arteria femoralis superficialis</i>. Since October 2020 she is working towards her doctoral thesis that involves <i> in vivo </i> clinical studies at the Rijnstate hospital under the supervision of Prof. Michel Reijnen and simulations of flow in stented arteries using the lattice Boltzmann method.";
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+          </script>
+          <p style="text-align:center;"> 
+            <b> Lisa Rutten </b> <br> 
+            (2020--ongoing with Michel Reijnen) <br>
+            <i> Optical Coherence Tomography and High-Fidelity Flow
+            Simulations for improved Stent Planning in Femoropopliteal
+            Disease</i> 
+          </p>
+        </div>
+        </li>
+
 
       </ol>
 
