@@ -36,6 +36,14 @@
   max-width: 700px;
 }
 
+.container {
+  max-width: 1000px;
+  margin-left: 0;     /* Align to the left */
+  margin-right: auto; /* Push any extra space to the right */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
@@ -82,4 +90,12 @@
   .modal-content {
     width: 100%;
   }
+}
+
+p {
+  text-align: justify;
+}
+
+ol {
+  text-align: justify;
 }

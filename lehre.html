@@ -1,18 +1,24 @@
 <html>
   <head>
   <title>Kartik Jain</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   </head>
 
+<div class="container">
   <body>
 
-    <img height=400 src="IMG_2027.JPG">
-    <video style="position:absolute;width:580px;top:10px;left:300px" autoplay loop>
+    <img height=300 src="kartik_2024.png">
+    <video style="position:absolute;width:480px;top:10px;left:300px" autoplay loop>
       <source src="V.mp4" type="video/mp4">
     </video>
 
     <p>
     <b>
-    Kartik Jain, Assistant Professor of Biofluid Dynamics,<br>
+    Kartik Jain, Associate Professor of Biofluid Dynamics,<br>
     Department of Thermal and Fluid Engineering, <br>
     <a href="https://people.utwente.nl/k.jain?tab=about-me">University of Twente</a>, <br>
     The Netherlands <br>
@@ -29,7 +35,7 @@
 
     <h2><button> <a href="index.html"   >About</a> </button> 
         <button> <a href="projects.html">Research Projects</a></button> 
-        <button> <a href="cophi.html"   >Group members</a> </button> 
+        <button> <a href="cophi.html"   >Team members</a> </button> 
         <button> <a href="lehre.html"   >Teaching     </a> </button> 
         <button> <a href="apes.html"    >Research Code</a> </button> 
         <button> <a href="pub.html"     >Publications</a> </button> 
@@ -42,7 +48,7 @@
     <ol>
       <li>
         <b> <a
-        href="https://osiris.utwente.nl/student/OnderwijsCatalogusSelect.do?selectie=cursus&cursus=202001436&collegejaar=2021&taal=en">
+        href="https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202001436&collegejaar=2024&taal=en">
         Biofluid Dynamics - Theory and Analysis </a> </b>
         This course is an outcome of my experiences as an engineer who pursued the path of 
         research on biofluid dynamics.
@@ -60,15 +66,32 @@
             <source src="record.mp4" type="video/mp4">
           </video>
         -->
+
+        \[
+            \frac{\partial u_i}{\partial t}
+           + u_j \frac{\partial u_i}{\partial x_j}
+           -\frac{1}{\rho}\frac{\partial \sigma_{ij}}{\partial x_j}  
+           -g_i =0 
+        \]
       </li>
       <br><br>
       <li>
         <b> <a
-        href="https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202100009&collegejaar=2023&taal=en">
+        href="https://utwente.osiris-student.nl/onderwijscatalogus/extern/cursus?cursuscode=202100009&collegejaar=2025&taal=en">
         Fluid Mechanics, Vrije University Amsterdam</a> </b>
         The University of Twente and the Vrije University of Amsterdam have
         started a joint bachelor program in mechanical engineering.
         I am involved in the teaching of fluid mechanics at the bachelor level within this program.
+
+        \[
+            \frac{\partial \tilde{u}}{\partial \tilde{x}} 
+          + \frac{\partial \tilde{v}}{\partial \tilde{y}} = 0
+        \]
+        \[
+            \tilde{u}\frac{\partial \tilde{u}}{\partial \tilde{x}} 
+          + \tilde{v}\frac{\partial \tilde{u}}{\partial \tilde{y}} 
+          = \frac{\partial^2\tilde{u}}{\partial\tilde{y}^2}
+        \]
       </li>
       <br><br>
       <li>
@@ -76,12 +99,22 @@
         href="https://www.utwente.nl/en/courses/1458442/capita-selecta-lattice-boltzmann-methods/">
         Lattice Boltzmann Methods</a> </b>
         The course on LBM is what is called as Capita Selecta in Twente.
-        This is a self-learning with supervision type course in which participants at the doctoral
-        and post-doctoral level learn theory of LBM, advanced concepts like collision operators.
-        Finally, they perform simulations using <i>Musubi</i> which equips them with sufficient skills
-        to embark further in the direction of LBM.
-        Based on the background of the participant, the contents are quite dynamic and the elements of 
-        physics, mathematics and computer science are accordingly fine-tuned.
+        This is a self-learning with supervision type course in which
+        participants at the doctoral and post-doctoral level learn theory of
+        LBM, advanced concepts like collision operators, and elements of
+        parallel computing.
+        The apply their learnings to perform simulations of few canonical cases
+        using <i>Musubi</i> which equips them with sufficient skills to embark
+        further in the direction of LBM.
+        Based on the background of the participant, the contents are quite
+        dynamic and the elements of physics, mathematics and computer science
+        are accordingly fine-tuned.
+
+        \[
+            f_i (\vec{r} + c_i\Delta t , t + \Delta t) 
+          = f_i(\vec{r}, t) + \Omega (f_{i}^{e}(\vec{r},t) - f_i(\vec{r}, t))
+
+        \]
       </li>
 
 
@@ -90,6 +123,7 @@
   </body>
 
 
+</div>
 
 
 
